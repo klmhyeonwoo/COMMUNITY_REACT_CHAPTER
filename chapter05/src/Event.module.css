@@ -1,0 +1,36 @@
+.btn {
+  width : 100px;
+  height : 30px;
+  border-radius: 50px;
+  border-style : none;
+  margin: 5px;
+  font-size: 11px;
+  background-color: #0064FF;
+  color : white;
+}
+
+.btn:hover {
+  opacity: 95%;
+}
+
+.input {
+  width : 300px;
+  height : 30px;
+  text-align: center;
+  margin-top: 40px;
+  border-style : solid;
+  border-color : #0064FF;
+  outline-color: #0064FF;
+  transition: all 1s;
+  border-radius: 50px;
+}
+
+.input:hover {
+  opacity: 80%;
+  outline-color: #0064FF;
+}
+
+.input:focus {
+  border-radius: 50px;
+  outline-color: #0064FF;
+}
