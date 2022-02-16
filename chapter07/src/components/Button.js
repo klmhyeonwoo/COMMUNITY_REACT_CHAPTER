@@ -1,10 +1,13 @@
 import styles from './Button.module.css';
-import like from './images/like.png';
+import like from './like.png';
 
-function Button(like_count) {
+function Button({value, onClick}) {
   return (
-    <img src={like}>
-  );
+    <div>
+    {value === false && <button type="submit"> <img src = {like} className={styles.false} onClick={onClick}/> </button> }
+    {value === true && <button type="submit"> <img src = {like} className={styles.true} onClick={onClick}/> </button>}
+    </div>
+    );
 }
 
 export default Button;

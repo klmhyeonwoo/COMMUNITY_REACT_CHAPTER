@@ -19,6 +19,7 @@ function App() {
 
   return (
     <Layout>
+      <p> ssss </p>
       <Button value = {like_count} onClick={onClick}></Button>
     </Layout>
   );
