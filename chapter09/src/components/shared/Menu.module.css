@@ -1,0 +1,16 @@
+.menu {
+  margin-top : 10px;
+  font-size: 13px;
+  width : 100px;
+  text-align: center;
+  color : black;
+}
+
+.href {
+  text-decoration: none;
+  color : #0064FF;
+}
+
+.href:active {
+  font-weight: 700;
+}

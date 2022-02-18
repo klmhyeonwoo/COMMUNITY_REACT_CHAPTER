@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: overlay;
+  flex-direction: column;
+  /* border-color : red;
+  border-style: solid; */
+}
+.layout {
+  display: flex;
+  flex: 1;
+  /* border-color : blue;
+  border-style: solid; */
+  margin-top : 56px;
+}
+.contents {
+  flex: 1;
+  /* border-color : black;
+  border-style: solid; */
+}
