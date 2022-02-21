@@ -17,22 +17,19 @@ function Layout({ children, activeMenu }) {
 //    }
 //  }
 
+// useState, useEffect는 항상 실행하는 순서가 동일해야함
+// 조건문이나 반복문을 사용하면 실행순서가 바뀔 수 있어 예상치 못한 오류를 야기
+
   function changeState() {
     setState((state) => !state);
-    console.log(state);
   }
-
-// useState, useEffect는 항상 실행하는 순서가 동일해야하기 때문입니다.
-// 조건문이나 반복문을 사용하면 실행순서가 바뀔 수 있어 예상치 못한 오류를 야기하게 됩니다.
-
-
 
   return (
     <div className={styles.container}>
       <Header changeState={changeState} />
       <div className={styles.layout}>
         <Menu activeMenu={activeMenu} statement={state}/>
-        <div className={styles.contents}>{children}</div>
+        <div className={state == true ? styles.contents : styles.contents_fold}>{children}</div>
       </div>
     </div>
   );
