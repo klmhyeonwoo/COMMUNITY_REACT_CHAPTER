@@ -15,6 +15,7 @@ function Header({changeState}) {
   function onClick() {
     alert("검색한 내용 : " + value);
     setValue("");
+
   }
 
   function onChange(event) {
