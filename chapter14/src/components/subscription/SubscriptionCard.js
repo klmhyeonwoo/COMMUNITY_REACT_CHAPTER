@@ -1,7 +1,6 @@
 import HorizontalCard from '../shared/HorizontalCard';
 import styles from './SubscriptionCard.module.css';
 import default_img from '../../images/default_img.jpg';
-import moment from 'moment';
 
 function SubscriptionCard({data}) {
 
